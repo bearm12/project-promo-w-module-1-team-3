@@ -170,6 +170,13 @@
 
 
 /* Aquí comienza el css de las card personas */
+
+.section_personas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .cards_persona{
     margin: 0 auto;
     /* padding: 0 15px 0 15px; */
@@ -195,35 +202,46 @@
             }
   
   .nombre_persona{
-      font-family: 'Open Sans', sans-serif;
+      width: 147px;
+      height: 45px;
+      margin: 15px 70.5px 0 72.5px;
+      font-family: OpenSans;
       font-size: 20px;
-      font-weight:400;
-      margin-top: 15px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.25;
+      letter-spacing: normal;
       text-align: center;
+      color: var(--black);
   }
   
   .info_persona_text{
+    width: 290px;
+    height: 200px;
+    margin: 15px 0 15px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;;
-    margin-top: 15px;
-    width: 100%;
-    height: 130px;
-    margin: 60px 0 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
     text-align: center;
-    padding: 0 15px 0 15px;
+    color: var(--gunmetal);
   }
   
   .social_share{
-    color: var(--blue-green);
-    text-align: center;
-    margin: 60px 0 15px;
+    width: 124px;
     height: 30px;
+    margin: 15px 83px 0;
+    font-size: 16px;
+    text-align: center;
+    list-style-type: none;
+    color: var(--blue-green);
   }
   
   .icono{
     margin-inline: 5px;
+    display: inline;
   }
   
 
