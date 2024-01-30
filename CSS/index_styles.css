@@ -92,30 +92,21 @@
 }
 
 .box_hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
+    width: 90%;
     height: 80px;
     background-color: var(--white);
-    margin: 0 auto;
-    position: relative;
-    top: -40px;
-    z-index: 0;
-        
-}
-.description_hero {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     padding: 15px;
     line-height: 25px;
-    height: 80px;
-    width: 260px;
     font-family: 'Open Sans';
-    
-
-           
+    position: absolute;
+    top: 387px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+     
 }
 
 .section_team_text>p {
@@ -314,6 +305,16 @@ para así reutilizarlo en otras partes */
     .section_strength, .section_weakness {
         width: 50%;
     }
+
+
+    .box_hero {
+        margin: 0 0 0 46px;
+        width: 441px;
+        padding: 15px 30px 15px 30px;
+        top: 341px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 } 
 
 @media (min-width: 1200px) {
@@ -323,4 +324,18 @@ para así reutilizarlo en otras partes */
     .section_strength_and_weakness {
         padding: 45px 138px 60px 138px;
     }
+
+    .hero_image {
+        height: 550px;
+    }
+
+    .box_hero {
+        margin: 0 0 0 138px;
+        width: 574px;
+        top: 460px;
+        font-size: 24px;
+        line-height: 30px;
+        height: 90px;
+        background-color: rgba(255, 255, 255, 0.8);
+        }
 }
