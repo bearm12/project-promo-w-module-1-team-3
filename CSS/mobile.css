@@ -1,7 +1,6 @@
 .website_header {
     width: 100%;
     height: auto;
-    padding: 15px 80px;
     opacity: 0.95;
     background-color: var(--blue-green);
     display: flex;
@@ -23,6 +22,7 @@
     color: var(--white);
     display: flex;
     justify-content: center;
+    margin: 15px 0 15px 0;
 }
 
 .menu {
@@ -61,9 +61,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 15px;
 }
 .section_team_title {
     font-size: 1.5rem;
+    font-family: 'Rubik';
+     font-weight: 500;
     color: var(--aqua);
     padding-top: 30px;
     line-height: 2.813rem;
@@ -72,12 +75,14 @@
 .section_team_text {
     font-size: 1rem;
     line-height: 1.5rem;
+    font-family: 'Open Sans';
     color: var(--gunmetal);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 15px 15px 30px 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 /* AQUÍ EMPIEZA EL HERO */
@@ -153,12 +158,15 @@
 .section_strength_title, .section_weakness_title {
     font-size: 1.375rem;
     line-height: 2.813rem;
+    font-family: 'Rubik';
+    font-weight: 500;
     color: var(--blue-green);
 }
 
 .section_strength>p, .section_weakness>p {
     font-size: 1rem;
     line-height: 1.5rem;
+    font-family: 'Open Sans';
     color: var(--gunmetal);
     text-align: center;
 }
@@ -230,4 +238,34 @@ para así reutilizarlo en otras partes */
 
 .footer_logo>img {
     width: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+    .section_team {
+        padding: 0 45px;
+    }
+
+    .section_team_title {
+        color: var(--blue-green);
+    }
+
+    .section_strength_and_weakness {
+        padding: 45px 45px 60px 45px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section_strength, .section_weakness {
+        width: 50%;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .section_team {
+        padding: 0 300px;
+    }
+    .section_strength_and_weakness {
+        padding: 45px 138px 60px 138px;
+    }
 }
