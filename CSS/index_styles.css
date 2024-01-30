@@ -171,18 +171,8 @@
 
 /* Aquí comienza el css de las card personas */
 
-.section_personas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.cards_persona{
-    margin: 0 auto;
-    /* padding: 0 15px 0 15px; */
-  }
   
-  .personas{
+  .section_personas{
       width: 320px;
       display: flex;
       justify-content: center;
@@ -242,6 +232,10 @@
   .icono{
     margin-inline: 5px;
     display: inline;
+  }
+
+  .single_person{
+    
   }
   
 
