@@ -296,3 +296,31 @@ para así reutilizarlo en otras partes */
 }
 
 
+
+@media (min-width: 768px) {
+    .section_team {
+        padding: 0 45px;
+    }
+
+    .section_team_title {
+        color: var(--blue-green);
+    }
+
+    .section_strength_and_weakness {
+        padding: 45px 45px 60px 45px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section_strength, .section_weakness {
+        width: 50%;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .section_team {
+        padding: 0 300px;
+    }
+    .section_strength_and_weakness {
+        padding: 45px 138px 60px 138px;
+    }
+}
