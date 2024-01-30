@@ -335,15 +335,16 @@ para así reutilizarlo en otras partes */
         width: 50%;
     }
     .single_person{
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
+        flex-direction: row;
         display: inline-flex;
     }
-    .info_persona_text{
-        justify-content: flex-start;
-    }
-} 
 
+    .text_section{
+        text-align: left;
+        margin-left: 50px;
+    }
+
+}
 @media (min-width: 1200px) {
     .section_team {
         padding: 0 300px;
