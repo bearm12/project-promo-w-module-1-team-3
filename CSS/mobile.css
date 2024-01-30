@@ -5,6 +5,8 @@
     background-color: var(--blue-green);
     display: flex;
     flex-direction: column;
+    position: fixed;
+    z-index: 3;
 }
 
 .header_title {
@@ -78,6 +80,42 @@
     gap: 20px;
     padding-top: 15px;
     padding-bottom: 30px;
+}
+
+/* AQUÍ EMPIEZA EL HERO */
+.hero_image {
+    height: 421px;
+    background-image: url(../images/ambar-perrito-1-1024x899.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 80px;
+    background-color: var(--white);
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+    z-index: 0;
+        
+}
+.description_hero {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    line-height: 25px;
+    height: 80px;
+    width: 260px;
+    font-family: 'Open Sans';
+    
+
+           
 }
 
 .section_team_text>p {
