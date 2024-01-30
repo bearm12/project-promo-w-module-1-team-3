@@ -1,7 +1,6 @@
 .website_header {
     width: 100%;
     height: auto;
-    padding: 15px 80px;
     opacity: 0.95;
     background-color: var(--blue-green);
     display: flex;
@@ -21,6 +20,7 @@
     color: var(--white);
     display: flex;
     justify-content: center;
+    margin: 15px 0 15px 0;
 }
 
 .menu {
