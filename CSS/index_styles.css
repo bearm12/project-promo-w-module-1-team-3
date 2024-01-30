@@ -341,7 +341,6 @@ para así reutilizarlo en otras partes */
         align-items: center;
     }
 
-    }
     .footer_title {
         display: flex;
         align-items: flex-start;
@@ -355,6 +354,7 @@ para así reutilizarlo en otras partes */
     .footer_logo {
         align-self: flex-start;
     }
+
 }
 
 @media (min-width: 1200px) {
