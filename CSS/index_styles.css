@@ -169,17 +169,27 @@
 }
 
 
-/* Aquí comienza el css de las card personas */
+/* AQUÍ COMIENZA SECTION_PERSONAS*/
 
-  
+.section_person_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: nboldormal;
+    margin-top: 30px;
+    color: var(--blue-green);
+}
+
   .section_personas{
       width: 320px;
       display: flex;
       justify-content: center;
       flex-direction: column;
       text-align: center;
-      margin-top: 50px;
       margin: 0 auto;
+  }
+
+  .single_person{
+    margin-top: 50px;  
   }
   
   .img_izaskun{
@@ -189,7 +199,7 @@
     border-radius: 4px;
     outline: solid 5px var(--cool-grey) ;
     text-align: center;
-            }
+    }
   
   .nombre_persona{
       width: 147px;
@@ -234,9 +244,7 @@
     display: inline;
   }
 
-  .single_person{
-    
-  }
+
   
 
 /* Aquí comienza el css del footer */
@@ -325,6 +333,14 @@ para así reutilizarlo en otras partes */
     }
     .section_strength, .section_weakness {
         width: 50%;
+    }
+    .single_person{
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        display: inline-flex;
+    }
+    .info_persona_text{
+        justify-content: flex-start;
     }
 } 
 
