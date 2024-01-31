@@ -171,25 +171,32 @@
 
 /* AQUÍ COMIENZA SECTION_PERSONAS*/
 
-.section_person_title{
-    font-family: 'Open Sans', sans-serif;
+.container_section_personas{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: center;
+    width: 320px;
+}
+
+
+.title_section_person{
+    width: 193px;
+    height: 45px;
+    margin: 10px auto;
+    font-family: Rubik;
     font-size: 24px;
-    font-weight: nboldormal;
-    margin-top: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
     color: var(--blue-green);
 }
 
-  .section_personas{
-      width: 320px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto;
-  }
-
-  .single_person{
-    margin-top: 50px;  
+  .image_person{
+    margin: 10px auto; 
+    text-align: center;
   }
   
   .img_izaskun{
@@ -199,12 +206,13 @@
     border-radius: 4px;
     outline: solid 5px var(--cool-grey) ;
     text-align: center;
+    margin: 10px auto;
     }
   
   .nombre_persona{
       width: 147px;
       height: 45px;
-      margin: 15px 70.5px 0 72.5px;
+      margin: 10px auto; 
       font-family: OpenSans;
       font-size: 20px;
       font-weight: 400;
@@ -219,7 +227,7 @@
   .info_persona_text{
     width: 290px;
     height: 200px;
-    margin: 15px 0 15px;
+    /* margin: 15px 0 15px; */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -227,27 +235,31 @@
     letter-spacing: normal;
     text-align: center;
     color: var(--gunmetal);
+    margin: 0 auto;
   }
   
   .social_share{
     width: 124px;
     height: 30px;
-    margin: 15px 83px 0;
+    margin-top: 30px;
     font-size: 16px;
     text-align: center;
     list-style-type: none;
     color: var(--blue-green);
+    margin: 30px auto;
+    padding: 15px auto;
   }
   
   .icono{
     margin-inline: 5px;
     display: inline;
+    margin-top: 30px;
   }
 
 
   
 
-/* Aquí comienza el css del footer */
+/* AQUÍ COMIENZA EL FOOTER */
 
 footer {
     border-top: solid 1px var(--cool-grey);
@@ -334,17 +346,26 @@ para así reutilizarlo en otras partes */
     .section_strength, .section_weakness {
         width: 50%;
     }
-    .single_person{
-        flex-direction: row;
+
+    /* Comienzan los queries de tablet de CARD PERSONAS */
+
+    .persona_complet{
         display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .text_section{
-        text-align: left;
         margin-left: 50px;
+        text-align: left;
     }
 
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 }
+
+
 @media (min-width: 1200px) {
     .section_team {
         padding: 0 300px;
