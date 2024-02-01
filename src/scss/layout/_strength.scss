@@ -1,0 +1,56 @@
+.section_strength_and_weakness {
+
+    /* Investigar como cambiar opacidad solo al fondo */
+
+    background-color: rgba(184, 184, 185, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px 45px 15px;
+    gap: 30px;
+}
+
+.section_strength,
+.section_weakness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_strength_title,
+.section_weakness_title {
+    font-size: 1.375rem;
+    line-height: 2.813rem;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: var(--blue-green);
+}
+
+.section_strength>p,
+.section_weakness>p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Open Sans';
+    color: var(--gunmetal);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section_strength_and_weakness {
+        padding: 45px 45px 60px 45px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section_strength,
+    .section_weakness {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section_strength_and_weakness {
+        padding: 45px 138px 60px 138px;
+
+    }
+}

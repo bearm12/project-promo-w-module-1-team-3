@@ -1,0 +1,81 @@
+footer {
+    border-top: solid 1px var(--cool-grey);
+    padding-top: 30px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Esto lo he visto en el vídeo de columna central,
+que recomienda hacer un div container con el margin
+para así reutilizarlo en otras partes */
+.container {
+    margin: 0 15px;
+}
+
+.footer_title {
+    width: 100%;
+    height: 20px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--cool-grey);
+}
+
+.footer_item_list {
+    width: 100%;
+    height: 60px;
+    opacity: 0.75;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--gunmetal);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.footer_items_anchor {
+    color: var(--gunmetal);
+}
+
+.footer_logo {
+    margin-top: 30px;
+    width: 115.9px;
+}
+
+.footer_logo>img {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .footer_title {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer_item_list {
+        align-items: flex-end;
+        order: -1;
+    }
+
+    .footer_logo {
+        align-self: flex-start;
+    }
+}
