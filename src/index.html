@@ -9,123 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./scss/reset.scss" />
-  <link rel="stylesheet" href="./scss/main.scss" />
-
   <!-- Aquí debajo va el link de FontAwesome -->
   <script src="https://kit.fontawesome.com/462915c8cb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./scss/main.scss" />
 </head>
 
 <body>
   <!-- AQUI COMIENZA HEADER -->
-  <header class="website_header">
-    <h1 class="header_title">NOMBRE DEL GRUPO</h1>
-    <nav class="menu">
-      <ul class="menu_items">
-        <li><a class="header_items_anchor" href="#">EQUIPO</a></li>
-        <li><a class="header_items_anchor" href="#">QUIÉNES SOMOS</a></li>
-        <li><a class="header_items_anchor" href="#">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
+  <load src="../src/partials/header.html" />
   <!-- AQUI COMIENZA EL MAIN CONTENT -->
   <main>
     <!-- AQUÍ EMPIEZA EL HERO -->
-    <div class="hero_image"></div>
-    <div class="box_hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <load src="../src/partials/hero.html" />
+
     <!-- AQUI EMPIEZA SECCION EQUIPO -->
-    <section class="section_team">
-      <h2 class="section_team_title">EQUIPO</h2>
-      <div class="section_team_text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi commodi tempore numquam. Vitae quia soluta
-          laboriosam sapiente. Dolore tempore rerum inventore rem cum perspiciatis repellat architecto numquam odio?
-          Natus!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nisi maiores? Reprehenderit ab, veniam minus
-          distinctio perferendis consectetur qui, aliquam harum id quo incidunt, corporis ea porro ducimus sed
-          obcaecati!
-        </p>
-      </div>
-    </section>
-    <div class="rombo"></div>
+    <load src="../src/partials/team.html" />
+
     <!-- AQUI COMIENZA SECCION FORTALEZAS -->
-    <section class="section_strength_and_weakness">
-      <div class="section_strength">
-        <h3 class="section_strength_title">Fortalezas</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat ullam labore a laboriosam doloribus.
-          Ad cum odit iusto earum perspiciatis, asperiores possimus ea ullam cupiditate recusandae esse eaque autem.
-        </p>
-      </div>
-      <div class="section_weakness">
-        <h3 class="section_weakness_title">Debilidades</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi cupiditate nihil dolores voluptates,
-          autem corrupti, aliquid neque porro tempore saepe corporis rerum dolorem non laborum quia expedita. Enim,
-          aliquam!
-        </p>
-      </div>
-    </section>
+    <load src="../src/partials/strength.html" />
+
     <!-- AQUÍ COMIENZAN LAS CARD PERSONAS -->
-    <div class="container_section_personas">
-      <h2 class="title_section_person">QUIENES SOMOS</h2>
-      <!-- Aquí comienza la imagen de la persona -->
-      <div class="persona_complet">
-        <div class="image_person">
-          <figure>
-            <img src="../images/izaskun_img.jpg" alt="Izaskun Saez" class="img_izaskun" />
-          </figure>
-        </div>
-        <!-- Aquí comienza la información en texto -->
-        <div class="text_section">
-          <div class="nombre_persona">
-            <h4>Izaskun Sáez</h4>
-          </div>
+    <load src="../src/partials/personas.html" />
 
-          <div class="info_persona_text">
-            <p>Este es un texto informativo de cada una de nosotras ipsum dolor sit amet consectetur adipisicing elit.
-              Amet deserunt consectetur consequatur laborum.
-              Nisi molestias similique quam est veniam, consequatur vitae culpa porro aperiam eaque. Facilis sapiente
-              voluptate impedit doloremque.</p>
-          </div>
-
-          <!-- Aquí comienza la zona de iconos de social media -->
-          <div class="social_share">
-            <ul>
-              <li class="icono">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </li>
-              <li class="icono">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </li>
-              <li class="icono">
-                <i class="fa-brands fa-github-alt"></i>
-              </li>
-              <li class="icono">
-                <i class="fa-solid fa-envelope"></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
   <!-- AQUI COMIENZA EL FOOTER -->
-  <footer>
-    <div class="container">
-      <span class="footer_title">Nombre del grupo &copy; 2018</span>
-      <ul class="footer_item_list">
-        <li><a class="footer_items_anchor" href="">EQUIPO</a></li>
-        <li><a class="footer_items_anchor" href="">QUIÉNES SOMOS</a></li>
-        <li><a class="footer_items_anchor" href="">CONTACTO</a></li>
-      </ul>
-      <div class="footer_logo">
-        <img src="../images/logo-adalab.png" alt="adalab_logo" />
-      </div>
-    </div>
-  </footer>
+  <load src="../src/partials/footer.html" />
 </body>
 
 </html>
