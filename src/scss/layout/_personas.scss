@@ -85,6 +85,13 @@
       align-items: center;
       text-align: center;
   }
+  .content_persona_right{
+    max-width: 650px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+}
 
   .persona_image{
     width: 205px;
