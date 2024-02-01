@@ -59,7 +59,7 @@
   text-align: center;
   list-style-type: none;
   color: $primary-color;
-  margin: 60px auto;
+  margin: 90px auto;
   padding: 15px auto;
 }
 
@@ -72,16 +72,21 @@
   
   @media (min-width: 768px){
 
+    .container_section_personas{
+      justify-content: center;
+      align-items: center;
+    }
+
     .content_persona{
-      min-width: 600px;
+      max-width: 650px;
       display: inline-flex;
       flex-direction: row;
       align-items: center;
-      margin: 0 auto;
+      text-align: center;
   }
 
   .content_persona_text{
-      margin-left: 50px;
+    margin-left: 35px;
       text-align: left;
   }
 
