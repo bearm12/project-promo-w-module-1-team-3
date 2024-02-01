@@ -47,7 +47,7 @@
     font-weight: 300;
     line-height: 1.5;
     width: 100%;
-    height: 130px;
+    height: auto;
     margin: 15px 0 15px 0;
     padding: 0 15px 0 15px;
 }
@@ -59,7 +59,7 @@
   text-align: center;
   list-style-type: none;
   color: $primary-color;
-  margin: 90px auto;
+  margin: 15px auto;
   padding: 15px auto;
 }
 
@@ -78,21 +78,34 @@
     }
 
     .content_persona{
-      max-width: 650px;
+      max-width: 700px;
       display: inline-flex;
       flex-direction: row;
       align-items: center;
       text-align: center;
   }
 
+  .persona_image{
+    width: 205px;
+    height: 205px;
+}
+
   .content_persona_text{
     margin-left: 35px;
-      text-align: left;
+    text-align: left;
+  }
+
+  .content_persona_text_bio,
+  .content_persona_text_name,
+  .socialshare_icon_list{
+    padding-left: 0;
+
   }
 
   .socialshare_icon_list{
     text-align: left;
-    min-width: 600px;
+    min-width: 700px;
+    margin: 0 auto;
   }
 
   }
