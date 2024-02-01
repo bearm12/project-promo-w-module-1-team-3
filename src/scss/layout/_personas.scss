@@ -75,10 +75,11 @@
     .container_section_personas{
       justify-content: center;
       align-items: center;
+      
     }
 
-    .content_persona{
-      max-width: 700px;
+    .content_persona_left{
+      max-width: 650px;
       display: inline-flex;
       flex-direction: row;
       align-items: center;
@@ -93,10 +94,11 @@
   .content_persona_text{
     margin-left: 35px;
     text-align: left;
+    max-width: 450px;
   }
 
-  .content_persona_text_bio,
   .content_persona_text_name,
+  .content_persona_text_bio,
   .socialshare_icon_list{
     padding-left: 0;
 
@@ -104,7 +106,7 @@
 
   .socialshare_icon_list{
     text-align: left;
-    min-width: 700px;
+    width: 650px;
     margin: 0 auto;
   }
 
