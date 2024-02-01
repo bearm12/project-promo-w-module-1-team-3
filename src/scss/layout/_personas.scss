@@ -63,6 +63,17 @@
   padding: 15px auto;
 }
 
+.socialshare_icon_list_right{
+  width: 124px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  list-style-type: none;
+  color: $primary-color;
+  margin: 15px auto;
+  padding: 15px auto;
+}
+
 .icono {
   margin-inline: 5px;
   display: inline;
@@ -84,13 +95,16 @@
       flex-direction: row;
       align-items: center;
       text-align: center;
+      margin-top: 50px;
   }
+  
   .content_persona_right{
     max-width: 650px;
     display: inline-flex;
     flex-direction: row-reverse;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
   .persona_image{
@@ -104,6 +118,13 @@
     max-width: 450px;
   }
 
+  .content_persona_text_right{
+    flex-direction: row-reverse;
+    margin-right: 35px;
+    text-align: right;
+    max-width: 450px;
+  }
+
   .content_persona_text_name,
   .content_persona_text_bio,
   .socialshare_icon_list{
@@ -113,6 +134,13 @@
 
   .socialshare_icon_list{
     text-align: left;
+    width: 650px;
+    margin: 0 auto;
+  }
+
+
+  .socialshare_icon_list_right{
+    text-align: right;
     width: 650px;
     margin: 0 auto;
   }
