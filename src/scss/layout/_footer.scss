@@ -66,26 +66,32 @@ para así reutilizarlo en otras partes */
 
 @media (min-width: 768px) {
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    footer {
         height: 170px;
     }
 
+    .container {
+        margin: 0 45px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        flex-flow: column wrap;
+    }
 
     .footer_title {
         display: flex;
-        margin-right: 20px;
+        width: 50%;
+        order: 1;
     }
 
     .footer_item_list {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
+        width: 50%;
         height: auto;
-        margin-right: 45px;
         opacity: 0.75;
         font-family: $font-text;
         font-size: 14px;
@@ -96,11 +102,25 @@ para así reutilizarlo en otras partes */
         letter-spacing: normal;
         text-align: right;
         color: $tertiary-color;
-        order: -1;
+        order: 3;
+        margin: 0px;
+        align-self: flex-end;
     }
 
     .footer_logo {
-        align-self: flex-start;
-       
+        width: 50%;
+        margin: 0px;
+        order: 2;
+    }
+
+    .footer_logo > img {
+        width: 100px;
+    
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin: 0 138px;
     }
 }
