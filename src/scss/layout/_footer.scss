@@ -1,5 +1,5 @@
 footer {
-    border-top: solid 1px var(--cool-grey);
+    border-top: $complementary-color solid 1px;
     padding-top: 30px;
 }
 
@@ -20,7 +20,7 @@ para así reutilizarlo en otras partes */
 .footer_title {
     width: 100%;
     height: 20px;
-    font-family: 'Open Sans';
+    font-family: $font-text;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -28,14 +28,14 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
-    color: var(--cool-grey);
+    color: $complementary-color;
 }
 
 .footer_item_list {
     width: 100%;
     height: 60px;
     opacity: 0.75;
-    font-family: 'Open Sans';
+    font-family: $font-text;
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
@@ -43,7 +43,7 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
-    color: var(--gunmetal);
+    color: $tertiary-color;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -52,7 +52,7 @@ para así reutilizarlo en otras partes */
 }
 
 .footer_items_anchor {
-    color: var(--gunmetal);
+    color: $tertiary-color;
 }
 
 .footer_logo {
@@ -64,18 +64,43 @@ para así reutilizarlo en otras partes */
     width: 100%;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 170px;
+    }
+
+
     .footer_title {
         display: flex;
-        align-items: flex-start;
+        margin-right: 20px;
     }
 
     .footer_item_list {
+        display: flex;
+        flex-direction: column;
         align-items: flex-end;
+        width: 100%;
+        height: auto;
+        margin-right: 45px;
+        opacity: 0.75;
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.14;
+        letter-spacing: normal;
+        text-align: right;
+        color: $tertiary-color;
         order: -1;
     }
 
     .footer_logo {
         align-self: flex-start;
+       
     }
 }

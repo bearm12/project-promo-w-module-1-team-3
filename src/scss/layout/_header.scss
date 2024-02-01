@@ -1,8 +1,8 @@
 .website_header {
     width: 100%;
     height: auto;
+    background-color: $primary-color;
     opacity: 0.95;
-    background-color: var(--blue-green);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -12,14 +12,14 @@
 .header_title {
     width: 100%;
     height: 30px;
-    font-family: Rubik;
+    font-family: $font-title;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.88;
     letter-spacing: normal;
-    color: var(--white);
+    color: $white;
     display: flex;
     justify-content: center;
     margin: 15px 0 15px 0;
@@ -32,7 +32,7 @@
     height: 45px;
     padding: 8px 17px 7px 16px;
     opacity: 0.9;
-    background-color: var(--aqua);
+    background-color: $secondary-color;
 }
 
 .menu_items {
@@ -40,18 +40,18 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    font-family: Rubik;
+    font-family: $font-title;
     font-size: 15px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
     letter-spacing: normal;
-    color: var(--white);
+    color: $white;
 }
 
 .header_items_anchor {
-    color: var(--white);
+    color: $white;
 }
 
 @media (min-width: 768px){
@@ -70,9 +70,32 @@
     }
 
     .menu {
-        background-color: var(--blue-green);
+        background-color: $primary-color;
         padding: 5px;
         align-items: center;
     }
 
+}
+
+@media (min-width: 1200px) {
+
+.website_header {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 138px 14px 142px;
+    align-items: center;
+    height: 60px;
+}
+
+.header_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu {
+    background-color: $primary-color;
+    padding: 5px;
+    align-items: center;
+}
 }
