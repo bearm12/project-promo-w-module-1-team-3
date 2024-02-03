@@ -216,3 +216,42 @@
   border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+  .container_section_personas {
+    margin: 0 45px;
+  }
+
+  .content_persona {
+    flex-direction: row;
+    margin-bottom: 60px;
+    
+    & figure {
+      margin: 0 25px 0 0;
+      min-width: 205px;
+    }
+
+    &_text {
+      align-items: start;
+
+      & p {
+        text-align: left;
+      }
+    }   
+  }
+
+  .content_persona_right {
+    flex-direction: row-reverse;
+
+    & figure {
+      margin: 0 0 0 25px;
+    }
+
+    & .content_persona_text {
+      align-items: end;
+
+      & p {
+        text-align: right;
+      }
+    }
+  }
+}
