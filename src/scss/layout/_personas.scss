@@ -1,148 +1,218 @@
 
-.container_section_personas{
+// .container_section_personas{
+//     display: flex;
+//     flex-direction: column;
+//     margin: 30px auto;
+//     text-align: center;
+//     width: 320px;
+// }
+
+// .title_section_personas{
+//     width: 193px;
+//     height: 45px;
+//     margin: 10px auto;
+//     font-family: Rubik;
+//     font-size: 24px;
+//     font-weight: 500;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.88;
+//     letter-spacing: normal;
+//     color: $primary-color;
+// }
+
+//   .content_persona_image{
+//     margin: 10px auto; 
+//   }
+  
+//   .persona_image{
+//     background-image: url(../images/izaskun_img.jpg);
+//     width: 180px;
+//     height: 180px;
+//     border-radius: 4px;
+//     outline: solid 5px $complementary-color;
+// }
+
+// .content_persona_text_name {
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 20px;
+//     font-weight: 400;
+//     margin-top: 15px;
+
+// }
+
+// .content_persona_text_bio {
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 16px;
+//     font-weight: 300;
+//     line-height: 1.5;
+//     width: 100%;
+//     height: auto;
+//     margin: 15px 0 15px 0;
+//     padding: 0 15px 0 15px;
+// }
+
+// .socialshare_icon_list {
+//   width: 124px;
+//   height: 30px;
+//   font-size: 16px;
+//   text-align: center;
+//   list-style-type: none;
+//   color: $primary-color;
+//   margin: 15px auto;
+//   padding: 15px auto;
+// }
+
+// .socialshare_icon_list_right{
+//   width: 124px;
+//   height: 30px;
+//   font-size: 16px;
+//   text-align: center;
+//   list-style-type: none;
+//   color: $primary-color;
+//   margin: 15px auto;
+//   padding: 15px auto;
+// }
+
+// .icono {
+//   margin-inline: 5px;
+//   display: inline;
+//   margin-top: 30px;
+// }
+
+  
+//   @media (min-width: 768px){
+
+//     .container_section_personas{
+//       justify-content: center;
+//       align-items: center;
+      
+//     }
+
+//     .content_persona_left{
+//       max-width: 650px;
+//       display: inline-flex;
+//       flex-direction: row;
+//       align-items: center;
+//       text-align: center;
+//       margin-top: 50px;
+//     }
+  
+//     .content_persona_right{
+//       max-width: 650px;
+//       display: inline-flex;
+//       flex-direction: row-reverse;
+//       align-items: center;
+//       text-align: center;
+//       margin-top: 50px;
+//     } 
+
+//     .persona_image{
+//       width: 205px;
+//       height: 205px;
+//     }
+
+//     .content_persona_text{
+//       margin-left: 35px;
+//       text-align: left;
+//       max-width: 450px;
+//     }
+
+//     .content_persona_text_right{
+//       flex-direction: row-reverse;
+//       margin-right: 35px;
+//      text-align: right;
+//     max-width: 450px;
+//   }
+
+//   .content_persona_text_name,
+//   .content_persona_text_bio,
+//   .socialshare_icon_list{
+//     padding-right: 0px;
+//   }
+
+//   .socialshare_icon_list{
+//     text-align: left;
+//     width: 650px;
+//     margin: 0 auto;
+//   }
+
+
+//   .socialshare_icon_list_right{
+//     text-align: right;
+//     width: 650px;
+//     margin: 0 auto;
+//   }
+
+//   }
+
+.container_section_personas {
+  margin: 0 15px;
+}
+ 
+.title_section_personas {
+  margin: 30px auto;
+  text-align: center;
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 45px;
+  color: $primary-color;
+  font-weight: 500;
+}
+
+.content_persona {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  & figure {
+    margin: 25px 65px 10px 65px;
+    max-width: 205px;
+    min-width: 180px; 
+  }
+
+  &_text {
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
-    text-align: center;
-    width: 320px;
-}
+    align-items: center;
 
-.title_section_personas{
-    width: 193px;
-    height: 45px;
-    margin: 10px auto;
-    font-family: Rubik;
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    color: $primary-color;
-}
-
-  .content_persona_image{
-    margin: 10px auto; 
-  }
-  
-  .persona_image{
-    background-image: url(../images/izaskun_img.jpg);
-    width: 180px;
-    height: 180px;
-    border-radius: 4px;
-    outline: solid 5px $complementary-color;
-}
-
-.content_persona_text_name {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 15px;
-
-}
-
-.content_persona_text_bio {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    width: 100%;
-    height: auto;
-    margin: 15px 0 15px 0;
-    padding: 0 15px 0 15px;
-}
-
-.socialshare_icon_list {
-  width: 124px;
-  height: 30px;
-  font-size: 16px;
-  text-align: center;
-  list-style-type: none;
-  color: $primary-color;
-  margin: 15px auto;
-  padding: 15px auto;
-}
-
-.socialshare_icon_list_right{
-  width: 124px;
-  height: 30px;
-  font-size: 16px;
-  text-align: center;
-  list-style-type: none;
-  color: $primary-color;
-  margin: 15px auto;
-  padding: 15px auto;
-}
-
-.icono {
-  margin-inline: 5px;
-  display: inline;
-  margin-top: 30px;
-}
-
-  
-  @media (min-width: 768px){
-
-    .container_section_personas{
-      justify-content: center;
-      align-items: center;
-      
+    & h4 {
+      font-family: $font-text;
+      font-size: 20px;
+      line-height: 45px;
+      color: $black;
     }
 
-    .content_persona_left{
-      max-width: 650px;
-      display: inline-flex;
-      flex-direction: row;
-      align-items: center;
+    & p {
+      font-family: $font-text;
+      font-size: 16px;
+      line-height: 24px;
       text-align: center;
-      margin-top: 50px;
-  }
-  
-  .content_persona_right{
-    max-width: 650px;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
+      color: $tertiary-color;
+    }
+
+    & ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      color: $primary-color;
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 15px;    
+    }
+    
+    & .icono::after {
+      content: "·";
+      color: $tertiary-color;
+    }
 }
 
-  .persona_image{
-    width: 205px;
-    height: 205px;
+
+}
+.persona_image {
+  width: 100%;
+  border: solid 5px $black-opacity;
+  border-radius: 5px;
 }
 
-  .content_persona_text{
-    margin-left: 35px;
-    text-align: left;
-    max-width: 450px;
-  }
-
-  .content_persona_text_right{
-    flex-direction: row-reverse;
-    margin-right: 35px;
-    text-align: right;
-    max-width: 450px;
-  }
-
-  .content_persona_text_name,
-  .content_persona_text_bio,
-  .socialshare_icon_list{
-    padding-left: 0;
-
-  }
-
-  .socialshare_icon_list{
-    text-align: left;
-    width: 650px;
-    margin: 0 auto;
-  }
-
-
-  .socialshare_icon_list_right{
-    text-align: right;
-    width: 650px;
-    margin: 0 auto;
-  }
-
-  }
