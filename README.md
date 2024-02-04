@@ -1,19 +1,25 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Primer proyecto grupal: Cry&Pull.
+---
 
-# Adalab web starter kit
+¡Hola a todos! 👋🏻
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+En este primero módulo, nos ha tocado estrenarnos en nuestro **primer proyecto creando nuestra primera página web.**
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Hemos recibido una maqueta por Zeplin, la cual nosotras hemos recreado, haciendo las modificaciones oportunas para hacer un diseño responsive y que se adapte a los diferentes dispositivos.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+Hemos puesto en práctica los conocimientos aprendidos en las clases, y esperamos que os guste a todos 
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
+## Construido con 🛠️
+- **HTML**
+- **CSS**
+- **GITHUB**
 
-## Guía de inicio rápido
+## Autores ✒️
+
+- *Izaskun Saez Velasco*
+- *Lejla Dzanko*
+- *Mar Caballero Moryno*
+- *Beatriz Ruf Moya*
 
 > **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
 
