@@ -23,14 +23,21 @@
 
   .content_persona_image{
     margin: 10px auto; 
+    
   }
   
   .persona_image{
     background-image: url(../images/izaskun_img.jpg);
     width: 180px;
     height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
     border-radius: 4px;
     outline: solid 5px rgba(184, 184, 185, 0.4);
+
+    // overflow: hidden;
+    
 }
 
 .content_persona_text_name_left,
@@ -129,7 +136,7 @@
     .socialshare_icon_list_left,{
       padding-left: 0;
       text-align: left;
-      width: 450px;
+      width: 500px;
       margin: 15px auto;
     }
 
@@ -151,7 +158,7 @@
       flex-direction: row-reverse;
       margin-right: 35px;
       text-align: right;
-      max-width: 450px;     
+      max-width: 500px;     
     }
 
     .content_persona_text_name_right,
