@@ -83,22 +83,42 @@
 }
 
 /* unvisited link */
-a:link {
+.icono_left a:link {
   color: #099d8d;
 }
 
 /* visited link */
-a:visited {
+.icono_left a:visited {
   color: #099d8d;
 }
 
 /* mouse over link */
-a:hover {
+.icono_left a:hover {
   color: hotpink;
 }
 
 /* selected link */
-a:active {
+.icono_left a:active {
+  color: $primary-color;
+}
+
+/* unvisited link */
+.icono_right a:link {
+  color: #099d8d;
+}
+
+/* visited link */
+.icono_right a:visited {
+  color: #099d8d;
+}
+
+/* mouse over link */
+.icono_right a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.icono_right a:active {
   color: $primary-color;
 }
 
