@@ -12,7 +12,7 @@ Estamos encantadas de recibir un feedback, así podremos aprender y mejorar en t
 
 > **NOTA:** Como bien dice nuestro nombre de grupo, hemos llorado pero no hemos dejado de creer en nosotras.
 
-## Construido con 🛠️q
+## Construido con 🛠️
 - **HTML**
 - **CSS**
 - **GITHUB**
