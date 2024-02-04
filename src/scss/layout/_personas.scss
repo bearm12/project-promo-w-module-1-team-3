@@ -1,20 +1,3 @@
-.cards_persona {
-    margin: 0 auto;
-    /* padding: 0 15px 0 15px; */
-}
-
-.personas {
-    width: 320px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
-    margin: 0 auto;
-}
-
-.img_izaskun {
-/* AQUÍ COMIENZA SECTION_PERSONAS*/
 
 .container_section_personas{
     display: flex;
@@ -24,129 +7,199 @@
     width: 320px;
 }
 
-
-.title_section_person{
+.title_section_personas{
     width: 193px;
     height: 45px;
     margin: 10px auto;
-    font-family: Rubik;
+    font-family: $font-text;
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.88;
     letter-spacing: normal;
-    color: var(--blue-green);
+    color: $primary-color;
 }
 
-  .image_person{
+  .content_persona_image{
     margin: 10px auto; 
-    text-align: center;
+    
   }
   
-  .img_izaskun{
+  .persona_image{
     background-image: url(../images/izaskun_img.jpg);
     width: 180px;
     height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
     border-radius: 4px;
-    outline: solid 5px var(--cool-grey);
-    text-align: center;
+    outline: solid 5px rgba(184, 184, 185, 0.4);
+
+    // overflow: hidden;
+    
 }
 
-.nombre_persona {
+.content_persona_text_name_left,
+.content_persona_text_name_right {
     font-family: 'Open Sans', sans-serif;
+    font-weight: light;
     font-size: 20px;
     font-weight: 400;
     margin-top: 15px;
-    text-align: center;
+
 }
 
-.info_persona_text {
+.content_persona_text_bio_left,
+.content_persona_text_bio_right {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
-    ;
-    margin-top: 15px;
     width: 100%;
-    height: 130px;
-    margin: 60px 0 15px;
-    text-align: center;
+    height: auto;
+    margin: 15px 0 15px 0;
     padding: 0 15px 0 15px;
 }
 
-.social_share {
-    color: var(--blue-green);
-    text-align: center;
-    margin: 60px 0 15px;
-    height: 30px;
+.socialshare_icon_list_left,
+.socialshare_icon_list_right {
+  width: 124px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  list-style-type: none;
+  color: $primary-color;
+  margin: 15px auto;
+  padding: 15px auto;
 }
 
-.icono {
-    margin-inline: 5px;
+.icono_left,
+.icono_right {
+  margin-inline: 0;
+  display: inline;
+  margin-top: 30px;
+  padding: 0;  
 }
-    margin: 10px auto;
-    }
-  
-  .nombre_persona{
-      width: 147px;
-      height: 45px;
-      margin: 10px auto; 
-      font-family: OpenSans;
-      font-size: 20px;
-      font-weight: 400;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 2.25;
-      letter-spacing: normal;
-      text-align: center;
-      color: var(--black);
-  }
-  
-  .info_persona_text{
-    width: 290px;
-    height: 200px;
-    /* margin: 15px 0 15px; */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: var(--gunmetal);
-    margin: 0 auto;
-  }
-  
-  .social_share{
-    width: 124px;
-    height: 30px;
-    margin-top: 30px;
-    font-size: 16px;
-    text-align: center;
-    list-style-type: none;
-    color: var(--blue-green);
-    margin: 30px auto;
-    padding: 15px auto;
-  }
-  
-  .icono{
-    margin-inline: 5px;
-    display: inline;
-    margin-top: 30px;
-  }
 
+/* unvisited link */
+a:link {
+  color: #099d8d;
+}
+
+/* visited link */
+a:visited {
+  color: #099d8d;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: $primary-color;
+}
+
+// Para meter el punto utilizamos :after
+// y luego escribimos dentro de las propiedades content:'escribimos el contenido aquí'
+// :not(:last-child):after poniendo esto, no sale el último pseudoelemnt, o sea, el puntito
+.icono_left:not(:last-child):after{ 
+  content: '·';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icono_right:not(:last-child):after{
+  content: '·';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+} 
+  
+////////////////////// Media queries
 
   @media (min-width: 768px){
-    .persona_complet{
+
+    //////// Media queries main container 
+    .container_section_personas{
+      justify-content: center;
+      align-items: center;   
+    }
+    
+    //////// Media queries left persona 
+    .content_persona_left{
+      max-width: 650px;
       display: inline-flex;
       flex-direction: row;
       align-items: center;
-      margin: 0 auto;
-  }
+      text-align: center;
+      margin-top: 50px;
+    }
 
-  .text_section{
-      margin-left: 50px;
+    .persona_image{
+      width: 205px;
+      height: 205px;
+    }
+
+    .content_persona_text_left{
+      margin-left: 35px;
       text-align: left;
+      max-width: 500px;
+    }
+
+    .content_persona_text_name_left,
+    .content_persona_text_bio_left,
+    .socialshare_icon_list_left{
+      padding-left: 0;
+      text-align: left;
+      width: 500px;
+      margin: 15px auto;
+    }
+
+    .icono_left {
+      padding-right: 10px;
+    }
+
+     //////// Media queries right persona  
+    .content_persona_right{
+      max-width: 650px;
+      display: inline-flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .content_persona_text_right{
+      flex-direction: row-reverse;
+      margin-right: 35px;
+      text-align: right;
+      max-width: 500px;     
+    }
+
+    .content_persona_text_name_right,
+    .content_persona_text_bio_right,
+    .socialshare_icon_list_right{
+      padding-right: 0;
+      text-align: right;
+      width: 450px;
+      margin: 15px auto;
+    }
+
+    .icono_right{
+      padding-left: 10px;
+    }
   }
 
+  @media (min-width: 1200px) {
+
+    .content_persona_text_bio_left,
+    .content_persona_text_bio_right{
+      max-width: 750px;
+      margin: 0 auto;
+    }
   }
