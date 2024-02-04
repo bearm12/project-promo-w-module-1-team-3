@@ -79,7 +79,27 @@
   margin-inline: 0;
   display: inline;
   margin-top: 30px;
-  padding: 0;
+  padding: 0;  
+}
+
+/* unvisited link */
+a:link {
+  color: #099d8d;
+}
+
+/* visited link */
+a:visited {
+  color: #099d8d;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: $primary-color;
 }
 
 // Para meter el punto utilizamos :after
@@ -128,7 +148,7 @@
     .content_persona_text_left{
       margin-left: 35px;
       text-align: left;
-      max-width: 450px;
+      max-width: 500px;
     }
 
     .content_persona_text_name_left,
@@ -176,3 +196,13 @@
   
 
   }
+
+  // @media (min-width: 1200px) {
+
+  //   .content_persona_text_bio_left,
+  //   .content_persona_text_bio_right{
+  //     max-width: 750px;
+  //     margin: 0 auto;
+  //   }
+
+  // }
