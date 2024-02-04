@@ -224,6 +224,8 @@
   .content_persona {
     flex-direction: row;
     margin-bottom: 60px;
+    align-items: start;
+    justify-content: flex-start;
     
     & figure {
       margin: 0 25px 0 0;
@@ -232,6 +234,7 @@
 
     &_text {
       align-items: start;
+      justify-content: flex-start;
 
       & p {
         text-align: left;
@@ -248,10 +251,30 @@
 
     & .content_persona_text {
       align-items: end;
+    
 
       & p {
         text-align: right;
       }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container_section_personas {
+    margin: 0 140px;
+  }
+
+  .content_persona figure {
+    margin: 0 45px 0 0;
+    min-width: 280px;  
+  }
+
+  .content_persona_right figure {
+    margin: 0 0 0 45px;
+  }
+
+  .content_persona_text {
+    width: 500px;
   }
 }
