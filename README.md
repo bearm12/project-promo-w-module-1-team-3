@@ -1,5 +1,4 @@
-# Primer proyecto grupal: Cry&Pull.
----
+# Primer proyecto grupal: Cry&Pull 😹
 
 ¡Hola a tod@s! 👋🏻
 
