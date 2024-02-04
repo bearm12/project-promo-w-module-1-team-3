@@ -1,4 +1,4 @@
-# Primer proyecto grupal: Cry&Pull 😹
+# Primer proyecto grupal: Pull&Cry 😹
 
 ¡Hola a tod@s! 👋🏻
 
@@ -12,7 +12,7 @@ Estamos encantadas de recibir un feedback, así podremos aprender y mejorar en t
 
 > **NOTA:** Como bien dice nuestro nombre de grupo, hemos llorado pero no hemos dejado de creer en nosotras.
 
-## Construido con 🛠️
+## Construido con 🛠️q
 - **HTML**
 - **CSS**
 - **GITHUB**
