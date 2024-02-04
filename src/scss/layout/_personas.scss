@@ -11,7 +11,7 @@
     width: 193px;
     height: 45px;
     margin: 10px auto;
-    font-family: Rubik;
+    font-family: $font-text;
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
@@ -106,7 +106,7 @@ a:active {
 // y luego escribimos dentro de las propiedades content:'escribimos el contenido aquí'
 // :not(:last-child):after poniendo esto, no sale el último pseudoelemnt, o sea, el puntito
 .icono_left:not(:last-child):after{ 
-  content: '.';
+  content: '·';
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ a:active {
 }
 
 .icono_right:not(:last-child):after{
-  content: '.';
+  content: '·';
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -197,12 +197,12 @@ a:active {
 
   }
 
-  // @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
 
-  //   .content_persona_text_bio_left,
-  //   .content_persona_text_bio_right{
-  //     max-width: 750px;
-  //     margin: 0 auto;
-  //   }
+    .content_persona_text_bio_left,
+    .content_persona_text_bio_right{
+      max-width: 750px;
+      margin: 0 auto;
+    }
 
-  // }
+  }
