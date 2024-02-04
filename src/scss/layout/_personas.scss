@@ -30,18 +30,21 @@
     width: 180px;
     height: 180px;
     border-radius: 4px;
-    outline: solid 5px $complementary-color;
+    outline: solid 5px rgba(184, 184, 185, 0.4);
 }
 
-.content_persona_text_name {
+.content_persona_text_name_left,
+.content_persona_text_name_right {
     font-family: 'Open Sans', sans-serif;
+    font-weight: light;
     font-size: 20px;
     font-weight: 400;
     margin-top: 15px;
 
 }
 
-.content_persona_text_bio {
+.content_persona_text_bio_left,
+.content_persona_text_bio_right {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -52,7 +55,8 @@
     padding: 0 15px 0 15px;
 }
 
-.socialshare_icon_list {
+.socialshare_icon_list_left,
+.socialshare_icon_list_right {
   width: 124px;
   height: 30px;
   font-size: 16px;
@@ -63,32 +67,43 @@
   padding: 15px auto;
 }
 
-.socialshare_icon_list_right{
-  width: 124px;
-  height: 30px;
-  font-size: 16px;
-  text-align: center;
-  list-style-type: none;
-  color: $primary-color;
-  margin: 15px auto;
-  padding: 15px auto;
-}
-
-.icono {
-  margin-inline: 5px;
+.icono_left,
+.icono_right {
+  margin-inline: 0;
   display: inline;
   margin-top: 30px;
+  padding: 0;
 }
 
+// Para meter el punto utilizamos :after
+// y luego escribimos dentro de las propiedades content:'escribimos el contenido aquí'
+// :not(:last-child):after poniendo esto, no sale el último pseudoelemnt, o sea, el puntito
+.icono_left:not(:last-child):after{ 
+  content: '.';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icono_right:not(:last-child):after{
+  content: '.';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+} 
   
+////////////////////// Media queries
+
   @media (min-width: 768px){
 
+    //////// Media queries main container 
     .container_section_personas{
       justify-content: center;
-      align-items: center;
-      
+      align-items: center;   
     }
-
+    
+    //////// Media queries left persona 
     .content_persona_left{
       max-width: 650px;
       display: inline-flex;
@@ -96,53 +111,61 @@
       align-items: center;
       text-align: center;
       margin-top: 50px;
-  }
+    }
+
+    .persona_image{
+      width: 205px;
+      height: 205px;
+    }
+
+    .content_persona_text_left{
+      margin-left: 35px;
+      text-align: left;
+      max-width: 450px;
+    }
+
+    .content_persona_text_name_left,
+    .content_persona_text_bio_left,
+    .socialshare_icon_list_left,{
+      padding-left: 0;
+      text-align: left;
+      width: 450px;
+      margin: 15px auto;
+    }
+
+    .icono_left {
+      padding-right: 10px;
+    }
+
+     //////// Media queries right persona  
+    .content_persona_right{
+      max-width: 650px;
+      display: inline-flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .content_persona_text_right{
+      flex-direction: row-reverse;
+      margin-right: 35px;
+      text-align: right;
+      max-width: 450px;     
+    }
+
+    .content_persona_text_name_right,
+    .content_persona_text_bio_right,
+    .socialshare_icon_list_right,{
+      padding-right: 0;
+      text-align: right;
+      width: 450px;
+      margin: 15px auto;
+    }
+
+    .icono_right{
+      padding-left: 10px;
+    }
   
-  .content_persona_right{
-    max-width: 650px;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-  .persona_image{
-    width: 205px;
-    height: 205px;
-}
-
-  .content_persona_text{
-    margin-left: 35px;
-    text-align: left;
-    max-width: 450px;
-  }
-
-  .content_persona_text_right{
-    flex-direction: row-reverse;
-    margin-right: 35px;
-    text-align: right;
-    max-width: 450px;
-  }
-
-  .content_persona_text_name,
-  .content_persona_text_bio,
-  .socialshare_icon_list{
-    padding-left: 0;
-
-  }
-
-  .socialshare_icon_list{
-    text-align: left;
-    width: 650px;
-    margin: 0 auto;
-  }
-
-
-  .socialshare_icon_list_right{
-    text-align: right;
-    width: 650px;
-    margin: 0 auto;
-  }
 
   }
