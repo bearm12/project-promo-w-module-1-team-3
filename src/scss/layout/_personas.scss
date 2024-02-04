@@ -153,7 +153,7 @@ a:active {
 
     .content_persona_text_name_left,
     .content_persona_text_bio_left,
-    .socialshare_icon_list_left,{
+    .socialshare_icon_list_left{
       padding-left: 0;
       text-align: left;
       width: 500px;
@@ -183,7 +183,7 @@ a:active {
 
     .content_persona_text_name_right,
     .content_persona_text_bio_right,
-    .socialshare_icon_list_right,{
+    .socialshare_icon_list_right{
       padding-right: 0;
       text-align: right;
       width: 450px;
@@ -193,8 +193,6 @@ a:active {
     .icono_right{
       padding-left: 10px;
     }
-  
-
   }
 
   @media (min-width: 1200px) {
@@ -204,5 +202,4 @@ a:active {
       max-width: 750px;
       margin: 0 auto;
     }
-
   }
