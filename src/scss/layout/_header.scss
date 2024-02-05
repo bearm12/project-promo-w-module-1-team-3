@@ -1,7 +1,6 @@
 .website_header {
     width: 100%;
     height: auto;
-    background-color: $primary-color-opacity;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -10,7 +9,7 @@
 
 .header_title {
     width: 100%;
-    height: 30px;
+    height: 60px;
     font-family: $font-title;
     font-size: 16px;
     font-weight: 500;
@@ -21,7 +20,8 @@
     color: $white;
     display: flex;
     justify-content: center;
-    margin: 15px 0 15px 0;
+    align-items: center;
+    background-color: $primary-color-opacity;
 }
 
 .menu {
@@ -59,16 +59,18 @@
         padding: 0px 45px;
         align-items: center;
         height: 60px;
+        background-color: $primary-color-opacity;
     }
 
     .header_title {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        background-color: transparent;
     }
 
     .menu {
-        background-color: $primary-color;
+        background-color: transparent;
         padding: 5px;
         align-items: center;
     }
