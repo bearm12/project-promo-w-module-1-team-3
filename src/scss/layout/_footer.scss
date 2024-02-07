@@ -50,6 +50,9 @@ footer .container {
 
 .footer_items_anchor {
     color: $tertiary-color;
+    &:hover{
+        color: $secondary-color;
+    }
 }
 
 .footer_logo {
