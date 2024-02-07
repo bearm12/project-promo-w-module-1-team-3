@@ -50,6 +50,9 @@
 
 .header_items_anchor {
     color: $white;
+    &:hover{
+        color: $secondary-color;
+    }
 }
 
 @media (min-width: 768px){
