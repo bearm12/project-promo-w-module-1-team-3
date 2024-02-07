@@ -1,0 +1,82 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 15px 60px 15px;
+
+    &__label {
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 400;
+        color: $tertiary-color;
+        margin-bottom: 7px;
+
+        & span {
+            color: $secondary-color;
+        } 
+    }
+
+    &__box {
+        width: 100%;
+        padding: 15px;
+        font-family: $font-text;
+        font-size: 14px;
+        margin-bottom: 13px;
+        display: flex;
+
+        &::placeholder {
+            color: #b8b8b9;
+        }
+         
+        &-message {
+            height: 100px;
+            padding-bottom: 67px;
+            margin-bottom: 30px;
+        }
+    }
+
+
+
+    &__button {
+       height: 45px;
+       background-color: $primary-color;
+       border: 2px solid $primary-color;
+       border-radius: 4px;
+       color: $white;
+       font-family: $font-title;
+       font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        margin: 0 163px 60px 163px;
+
+        &__button {
+            width: 206px;
+            align-self: flex-end;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .form {
+        margin: 0 300px 120px 300px;
+
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 45px;
+        }
+       
+        & .email {
+            grid-column: span 2;
+        }
+
+        &__button {
+            width: 278px;
+        }
+      
+    }
+}
