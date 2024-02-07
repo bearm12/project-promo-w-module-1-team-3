@@ -1,9 +1,5 @@
 footer {
-<<<<<<< HEAD
-    border-top: solid 1px var(--cool-grey);
-=======
     border-top: $complementary-color solid 1px;
->>>>>>> new-dev
     padding-top: 30px;
 }
 
@@ -14,12 +10,6 @@ footer .container {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-/* Esto lo he visto en el vídeo de columna central,
-que recomienda hacer un div container con el margin
-para así reutilizarlo en otras partes */
-=======
->>>>>>> new-dev
 .container {
     margin: 0 15px;
 }
@@ -27,11 +17,7 @@ para así reutilizarlo en otras partes */
 .footer_title {
     width: 100%;
     height: 20px;
-<<<<<<< HEAD
-    font-family: 'Open Sans';
-=======
     font-family: $font-text;
->>>>>>> new-dev
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -39,22 +25,14 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
-<<<<<<< HEAD
-    color: var(--cool-grey);
-=======
     color: $complementary-color;
->>>>>>> new-dev
 }
 
 .footer_item_list {
     width: 100%;
     height: 60px;
     opacity: 0.75;
-<<<<<<< HEAD
-    font-family: 'Open Sans';
-=======
     font-family: $font-text;
->>>>>>> new-dev
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
@@ -62,11 +40,7 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
-<<<<<<< HEAD
-    color: var(--gunmetal);
-=======
     color: $tertiary-color;
->>>>>>> new-dev
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -75,14 +49,10 @@ para así reutilizarlo en otras partes */
 }
 
 .footer_items_anchor {
-<<<<<<< HEAD
-    color: var(--gunmetal);
-=======
     color: $tertiary-color;
     &:hover{
         color: $secondary-color;
     }
->>>>>>> new-dev
 }
 
 .footer_logo {
@@ -94,21 +64,6 @@ para así reutilizarlo en otras partes */
     width: 100%;
 }
 
-<<<<<<< HEAD
-@media (min-width: 768px){
-    .footer_title {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .footer_item_list {
-        align-items: flex-end;
-        order: -1;
-    }
-
-    .footer_logo {
-        align-self: flex-start;
-=======
 @media (min-width: 768px) {
 
     footer {
@@ -172,6 +127,5 @@ para así reutilizarlo en otras partes */
     
     .container {
         margin: 0 138px;
->>>>>>> new-dev
     }
 }
