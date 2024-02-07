@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
 # Adalab web starter kit
@@ -16,6 +17,37 @@ En el Kit hay 3 tipos de ficheros y carpetas:
 ## Guía de inicio rápido
 
 > **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+=======
+# Primer proyecto grupal: Pull&Cry 😹
+
+¡Hola a tod@s! 👋🏻
+
+En este primero módulo, nos ha tocado estrenarnos en nuestro **primer proyecto creando nuestra primera página web.**
+
+Hemos recibido una maqueta por Zeplin, la cual nosotras hemos recreado, haciendo las modificaciones oportunas para hacer un diseño responsive y que se adapte a los diferentes dispositivos.
+
+Hemos puesto en práctica los conocimientos aprendidos en las clases, y esperamos que os guste a todos.
+
+Estamos encantadas de recibir un feedback, así podremos aprender y mejorar en todo aquello que esté en nuestras manos.
+
+> **NOTA:** Como bien dice nuestro nombre de grupo, hemos llorado pero no hemos dejado de creer en nosotras.
+
+## Construido con 🛠️
+- **HTML**
+- **CSS**
+- **GITHUB**
+
+## Autoras ✒️
+
+- *Izaskun Saez Velasco*
+- *Lejla Dzanko*
+- *Mar Caballero Moryno*
+- *Beatriz Ruf Moya*
+
+
+
+
+>>>>>>> new-dev
 
 ### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
 

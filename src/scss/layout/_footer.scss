@@ -1,5 +1,9 @@
 footer {
+<<<<<<< HEAD
     border-top: solid 1px var(--cool-grey);
+=======
+    border-top: $complementary-color solid 1px;
+>>>>>>> new-dev
     padding-top: 30px;
 }
 
@@ -10,9 +14,12 @@ footer .container {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 /* Esto lo he visto en el vídeo de columna central,
 que recomienda hacer un div container con el margin
 para así reutilizarlo en otras partes */
+=======
+>>>>>>> new-dev
 .container {
     margin: 0 15px;
 }
@@ -20,7 +27,11 @@ para así reutilizarlo en otras partes */
 .footer_title {
     width: 100%;
     height: 20px;
+<<<<<<< HEAD
     font-family: 'Open Sans';
+=======
+    font-family: $font-text;
+>>>>>>> new-dev
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -28,14 +39,22 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
+<<<<<<< HEAD
     color: var(--cool-grey);
+=======
+    color: $complementary-color;
+>>>>>>> new-dev
 }
 
 .footer_item_list {
     width: 100%;
     height: 60px;
     opacity: 0.75;
+<<<<<<< HEAD
     font-family: 'Open Sans';
+=======
+    font-family: $font-text;
+>>>>>>> new-dev
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
@@ -43,7 +62,11 @@ para así reutilizarlo en otras partes */
     line-height: 1.43;
     letter-spacing: normal;
     text-align: center;
+<<<<<<< HEAD
     color: var(--gunmetal);
+=======
+    color: $tertiary-color;
+>>>>>>> new-dev
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -52,7 +75,14 @@ para así reutilizarlo en otras partes */
 }
 
 .footer_items_anchor {
+<<<<<<< HEAD
     color: var(--gunmetal);
+=======
+    color: $tertiary-color;
+    &:hover{
+        color: $secondary-color;
+    }
+>>>>>>> new-dev
 }
 
 .footer_logo {
@@ -64,6 +94,7 @@ para así reutilizarlo en otras partes */
     width: 100%;
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px){
     .footer_title {
         display: flex;
@@ -77,5 +108,70 @@ para así reutilizarlo en otras partes */
 
     .footer_logo {
         align-self: flex-start;
+=======
+@media (min-width: 768px) {
+
+    footer {
+        height: 170px;
+    }
+
+    .container {
+        margin: 0 45px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        flex-flow: column wrap;
+    }
+
+    .footer_title {
+        display: flex;
+        width: 50%;
+        order: 1;
+    }
+
+    .footer_item_list {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        opacity: 0.75;
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.14;
+        letter-spacing: normal;
+        text-align: right;
+        color: $tertiary-color;
+        order: 3;
+        margin: 0px;
+        align-self: flex-end;
+    }
+
+    .footer_logo {
+        width: 50%;
+        margin: 0px;
+        order: 2;
+    }
+
+    .footer_logo > img {
+        width: 100px;
+    
+    }
+}
+
+@media (min-width: 1200px) {
+
+    footer{
+        height: 161px; 
+    }
+    
+    .container {
+        margin: 0 138px;
+>>>>>>> new-dev
     }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero_image {
     height: 421px;
     background-image: url(../images/ambar-perrito-1-1024x899.jpg);
@@ -7,6 +8,20 @@
 }
 
 .box_hero {
+=======
+.hero__image {
+    height: 421px;
+    background-image: url(../images/hero_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1200px) {
+            height: 550px;
+    }
+}
+
+.box__hero {
+>>>>>>> new-dev
     width: 90%;
     height: 80px;
     background-color: $white;
@@ -21,6 +36,7 @@
     top: 387px;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     margin: 0 auto;  
 }
 
@@ -53,3 +69,24 @@
         background-color: rgba(255, 255, 255, 0.8);
         }
 }
+=======
+    margin: 0 auto; 
+        @media (min-width: 768px) {
+            margin: 0 0 0 46px;
+            width: 441px;
+            padding: 15px 30px 15px 30px;
+            top: 341px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        @media (min-width: 1200px) {
+            margin: 0 0 0 138px;
+            width: 574px;
+            top: 460px;
+            font-size: 24px;
+            line-height: 30px;
+            height: 90px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+}
+>>>>>>> new-dev
