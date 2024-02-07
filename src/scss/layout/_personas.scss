@@ -1,225 +1,132 @@
+.container_section_personas {
+  margin: 0 15px;
+}
+ 
+.title_section_personas {
+  margin: 30px auto;
+  text-align: center;
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 45px;
+  color: $primary-color;
+  font-weight: 500;
+}
 
-.container_section_personas{
+.content_persona {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  & figure {
+    margin: 25px 65px 10px 65px;
+    max-width: 205px;
+    min-width: 180px; 
+  }
+
+  &_text {
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
-    text-align: center;
-    width: 320px;
-}
+    align-items: center;
 
-.title_section_personas{
-    width: 193px;
-    height: 45px;
-    margin: 10px auto;
-    font-family: $font-text;
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    color: $primary-color;
-}
-
-  .content_persona_image{
-    margin: 10px auto; 
-    
-  }
-  
-  .persona_image{
-    background-image: url(../images/izaskun_img.jpg);
-    width: 180px;
-    height: 180px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    border-radius: 4px;
-    outline: solid 5px rgba(184, 184, 185, 0.4);
-
-    // overflow: hidden;
-    
-}
-
-.content_persona_text_name_left,
-.content_persona_text_name_right {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: light;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 15px;
-
-}
-
-.content_persona_text_bio_left,
-.content_persona_text_bio_right {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    width: 100%;
-    height: auto;
-    margin: 15px 0 15px 0;
-    padding: 0 15px 0 15px;
-}
-
-.socialshare_icon_list_left,
-.socialshare_icon_list_right {
-  width: 124px;
-  height: 30px;
-  font-size: 16px;
-  text-align: center;
-  list-style-type: none;
-  color: $primary-color;
-  margin: 15px auto;
-  padding: 15px auto;
-}
-
-.icono_left,
-.icono_right {
-  margin-inline: 0;
-  display: inline;
-  margin-top: 30px;
-  padding: 0;  
-}
-
-/* unvisited link */
-.icono_left a:link {
-  color: #099d8d;
-}
-
-/* visited link */
-.icono_left a:visited {
-  color: #099d8d;
-}
-
-/* mouse over link */
-.icono_left a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-.icono_left a:active {
-  color: $primary-color;
-}
-
-/* unvisited link */
-.icono_right a:link {
-  color: #099d8d;
-}
-
-/* visited link */
-.icono_right a:visited {
-  color: #099d8d;
-}
-
-/* mouse over link */
-.icono_right a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-.icono_right a:active {
-  color: $primary-color;
-}
-
-// Para meter el punto utilizamos :after
-// y luego escribimos dentro de las propiedades content:'escribimos el contenido aquí'
-// :not(:last-child):after poniendo esto, no sale el último pseudoelemnt, o sea, el puntito
-.icono_left:not(:last-child):after{ 
-  content: '·';
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.icono_right:not(:last-child):after{
-  content: '·';
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-} 
-  
-////////////////////// Media queries
-
-  @media (min-width: 768px){
-
-    //////// Media queries main container 
-    .container_section_personas{
-      justify-content: center;
-      align-items: center;   
+    & h4 {
+      font-family: $font-text;
+      font-size: 20px;
+      line-height: 45px;
+      color: $black;
     }
-    
-    //////// Media queries left persona 
-    .content_persona_left{
-      max-width: 650px;
-      display: inline-flex;
-      flex-direction: row;
-      align-items: center;
+
+    & p {
+      font-family: $font-text;
+      font-size: 16px;
+      line-height: 24px;
       text-align: center;
-      margin-top: 50px;
+      color: $tertiary-color;
     }
 
-    .persona_image{
-      width: 205px;
-      height: 205px;
+    & ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+      color: $primary-color;
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 15px;    
     }
+    
+    & .icono::after {
+      content: "·";
+      color: $tertiary-color;
+    }
+}
 
-    .content_persona_text_left{
-      margin-left: 35px;
-      text-align: left;
-      max-width: 500px;
-    }
 
-    .content_persona_text_name_left,
-    .content_persona_text_bio_left,
-    .socialshare_icon_list_left{
-      padding-left: 0;
-      text-align: left;
-      width: 500px;
-      margin: 15px auto;
-    }
+}
+.persona_image {
+  width: 100%;
+  border: solid 5px $black-opacity;
+  border-radius: 5px;
+}
 
-    .icono_left {
-      padding-right: 10px;
-    }
-
-     //////// Media queries right persona  
-    .content_persona_right{
-      max-width: 650px;
-      display: inline-flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .content_persona_text_right{
-      flex-direction: row-reverse;
-      margin-right: 35px;
-      text-align: right;
-      max-width: 500px;     
-    }
-
-    .content_persona_text_name_right,
-    .content_persona_text_bio_right,
-    .socialshare_icon_list_right{
-      padding-right: 0;
-      text-align: right;
-      width: 450px;
-      margin: 15px auto;
-    }
-
-    .icono_right{
-      padding-left: 10px;
-    }
+@media (min-width: 768px) {
+  .container_section_personas {
+    margin: 0 45px;
   }
 
-  @media (min-width: 1200px) {
+  .content_persona {
+    flex-direction: row;
+    margin-bottom: 60px;
+    align-items: start;
+    justify-content: flex-start;
+    
+    & figure {
+      margin: 0 25px 0 0;
+      min-width: 205px;
+    }
 
-    .content_persona_text_bio_left,
-    .content_persona_text_bio_right{
-      max-width: 750px;
-      margin: 0 auto;
+    &_text {
+      align-items: start;
+      justify-content: flex-start;
+
+      & p {
+        text-align: left;
+      }
+    }   
+  }
+
+  .content_persona_right {
+    flex-direction: row-reverse;
+
+    & figure {
+      margin: 0 0 0 25px;
+    }
+
+    & .content_persona_text {
+      align-items: end;
+    
+
+      & p {
+        text-align: right;
+      }
     }
   }
+}
+
+@media (min-width: 1200px) {
+  .container_section_personas {
+    margin: 0 140px;
+  }
+
+  .content_persona figure {
+    margin: 0 45px 0 0;
+    min-width: 280px;  
+  }
+
+  .content_persona_right figure {
+    margin: 0 0 0 45px;
+  }
+
+  .content_persona_text {
+    width: 500px;
+  }
+}
