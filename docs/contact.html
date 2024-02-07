@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Aquí debajo va el link de FontAwesome -->
+    <script src="https://kit.fontawesome.com/462915c8cb.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./assets/main-52a3b753.css">
+  </head>
+  <body>
+    <!-- AQUI COMIENZA HEADER -->
+    <header class="website_header">
+  <h1 class="header_title">Pull&Cry</h1>
+  <nav class="menu">
+    <ul class="menu_items">
+      <li><a class="header_items_anchor" href="#equipo-id">EQUIPO</a></li>
+      <li><a class="header_items_anchor" href="#quienes-somos-id">QUIÉNES SOMOS</a></li>
+      <li><a class="header_items_anchor" href="contact.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main>
+      <!-- AQUI EMPIEZA EL HERO -->
+      <section class="hero_image"></section>
+      <!-- AQUI EMPIEZA LA SECCION CONTACTO -->
+      <section class="contact">
+  <h2 class="contact_title">CONTACTO</h2>
+  <p class="contact_text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi veritatis in consequatur, tempore reprehenderit quas.
+    Dolore consectetur doloribus harum aliquid! Laudantium exercitationem modi nemo excepturi nulla, officia alias
+    quibusdam ab.
+  </p>
+  <p class="contact_must">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</p>
+</section>
+
+      <!-- AQUI EMPIEZA EL FORMULARIO -->
+      <form action="https://dev.adalab.es/api/form" class="form">
+  <label class="form__label" for="name">Nombre completo <span>*</span></label>
+  <input class="form__box" type="text" name="name" id="name" placeholder="Nombre..." />
+  <div class="form__grid">
+    <div class="email">
+      <label class="form__label" for="email">Email <span>*</span></label>
+      <input class="form__box" type="email" name="email" id="email" placeholder="pepitapig@gmail.com" />
+    </div>
+    <div class="phone">
+      <label class="form__label" for="phone">Teléfono</label>
+      <input class="form__box" type="tel" name="phone" id="phone" placeholder="Ej: 123456789" />
+    </div>
+  </div>
+  <label class="form__label" for="message">Mensaje <span>*</span></label>
+  <input class="form__box form__box-message" type="text" name="message" id="mesage" placeholder="¿Qué necsitas?" />
+
+  <input class="form__button" type="submit" value="ENVIAR" />
+</form>
+
+    </main>
+    <!-- AQUI EMPIEZA EL FOOTER -->
+    <footer>
+  <div class="container">
+    <span class="footer_title">Pull&Cry &copy; 2024</span>
+    <ul class="footer_item_list">
+      <li><a class="footer_items_anchor" href="#equipo-id">EQUIPO</a></li>
+      <li><a class="footer_items_anchor" href="#quienes-somos-id">QUIÉNES SOMOS</a></li>
+      <li><a class="footer_items_anchor" href="contact.html">CONTACTO</a></li>
+    </ul>
+    <div class="footer_logo">
+      <img src="../images/logo-adalab.png" alt="adalab_logo" />
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

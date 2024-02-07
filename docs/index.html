@@ -1,69 +1,232 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pull&Cry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Aquí debajo va el link de FontAwesome -->
+    <script src="https://kit.fontawesome.com/462915c8cb.js" crossorigin="anonymous"></script>
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
+    <link rel="stylesheet" href="./assets/main-52a3b753.css">
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
+    <!-- AQUI COMIENZA HEADER -->
+    <header class="website_header">
+  <h1 class="header_title">Pull&Cry</h1>
+  <nav class="menu">
+    <ul class="menu_items">
+      <li><a class="header_items_anchor" href="#equipo-id">EQUIPO</a></li>
+      <li><a class="header_items_anchor" href="#quienes-somos-id">QUIÉNES SOMOS</a></li>
+      <li><a class="header_items_anchor" href="contact.html">CONTACTO</a></li>
+    </ul>
+  </nav>
 </header>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <!-- AQUI COMIENZA EL MAIN CONTENT -->
+    <main>
+      <!-- AQUÍ EMPIEZA EL HERO -->
+      <div class="hero__image"></div>
+<div class="box__hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div id="equipo-id"></div>
 
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
 
-    </li>
-  </ul>
-</main>
+      <!-- AQUI EMPIEZA SECCION EQUIPO -->
+      <section class="section_team">
+    <h2 class="section_team_title">EQUIPO</h2>
+    <div class="section_team_text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi commodi tempore numquam. Vitae quia soluta
+        laboriosam sapiente. Dolore tempore rerum inventore rem cum perspiciatis repellat architecto numquam odio?
+        Natus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nisi maiores? Reprehenderit ab, veniam minus
+        distinctio perferendis consectetur qui, aliquam harum id quo incidunt, corporis ea porro ducimus sed
+        obcaecati!
+      </p>
+    </div>
+  </section>
+  <div class="rombo"></div>
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <!-- AQUI COMIENZA SECCION FORTALEZAS -->
+      <section class="section_strength_and_weakness">
+  <div class="section_strength">
+    <h3 class="section_strength_title">Fortalezas</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat ullam labore a laboriosam doloribus. Ad
+      cum odit iusto earum perspiciatis, asperiores possimus ea ullam cupiditate recusandae esse eaque autem.
+    </p>
+  </div>
+  <div class="section_weakness">
+    <h3 class="section_weakness_title">Debilidades</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi cupiditate nihil dolores voluptates, autem
+      corrupti, aliquid neque porro tempore saepe corporis rerum dolorem non laborum quia expedita. Enim, aliquam!
+    </p>
+    <div id="quienes-somos-id"></div>
+  </div>
+</section>
 
-  </small>
+
+      <!-- AQUÍ COMIENZAN LAS CARD PERSONAS -->
+      <div class="container_section_personas">
+  <h2 class="title_section_personas">QUIENES SOMOS</h2>
+  <!-- Aquí comienza la imagen de la persona -->
+  <div class="content_persona content_persona_left">
+    <div class="content_persona_image">
+      <figure>
+        <img src="./images/izaskun_img.jpg" alt="Izaskun Saez" class="persona_image" />
+      </figure>
+    </div>
+    <!-- Aquí comienza la información en texto -->
+    <div class="content_persona_text">
+      <h4>Izaskun Sáez</h4>
+      <p>
+        ¡Hola! yo soy Izaskun 🙋🏻‍♀️ tengo 42 años y soy diseñadora UX/UI desde hace más de 10 años. Cuando no estoy delante
+        de una pantalla me gusta bordar y construir miniaturas. Desde que me levanto tengo la radio o música puesta y mi
+        gata sia 😽 (AKA Chipi) aprovecha cualquier ocasión para tirar las cosas que tengo encima de la mesa 😍
+      </p>
+      <!-- Aquí comienza la zona de iconos de social media -->
+      <ul class="socialshare_icon_list">
+        <li class="icono">
+          <a href="https://twitter.com/isaezdesign" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="icono">
+          <a href="https://www.linkedin.com/in/izaskunsaez/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="icono">
+          <a href="https://github.com/izaskunsv" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+        <li class="icono">
+          <a href="mailto:isaezvelasco@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content_persona content_persona_right">
+    <div class="content_persona_image">
+      <figure>
+        <img src="./images/bea_img.jpeg" alt="Bea Ruf" class="persona_image" />
+      </figure>
+    </div>
+    <!-- Aquí comienza la información en texto -->
+    <div class="content_persona_text">
+      <h4>Beatriz Ruf</h4>
+      <p>
+        En la foto, Bea se presenta como el cuarto mono, el observador tímido que, al igual que los primates, guarda
+        silencio al principio. Sin embargo, cuando ella decide hablar, resulta ser el mono más parlante y gracioso del
+        grupo. ¡Un cuarto mono con un sentido del humor tan contagioso como su risa!
+      </p>
+      <!-- Aquí comienza la zona de iconos de social media -->
+      <ul class="socialshare_icon_list">
+        <li class="icono">
+          <a href="https://twitter.com/bea_noworries" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="icono">
+          <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li class="icono">
+          <a href="https://github.com/bearm12" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+        <li class="icono">
+          <a href="mailto:bearm12493@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content_persona content_persona_left">
+    <div class="content_persona_image">
+      <figure>
+        <img src="./images/mar_img.jpeg" alt="Izaskun Saez" class="persona_image" />
+      </figure>
+    </div>
+    <!-- Aquí comienza la información en texto -->
+    <div class="content_persona_text">
+      <h4>Mar Caballero</h4>
+      <p>
+        ¡Hola mundo! 🌞Soy Mar y tengo 29 primaveras 🌸 Siempre me he dedicado al mundo de la sanidad, pero estoy
+        buscando mi hueco detrás de la pantalla. Me encanta la música, un buen libro, una fiestecilla y sobre todo
+        recorrer el mundo. Me encanta el chisme, así que si te gusta cotorrear ¡soy tu fiel aliada! 😜
+      </p>
+      <!-- Aquí comienza la zona de iconos de social media -->
+      <ul class="socialshare_icon_list">
+        <li class="icono">
+          <a href="https://twitter.com/chocorizos_" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="icono">
+          <a href="http://linkedin.com/in/mar-caballero-moryno-511398204" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="icono">
+          <a href="https://github.com/Mar-CM" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+        <li class="icono">
+          <a href="mailto:mar.caballero@hotmail.es" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content_persona content_persona_right">
+    <div class="content_persona_image">
+      <figure>
+        <img src="./images/lejla_img.jpeg" alt="Izaskun Saez" class="persona_image" />
+      </figure>
+    </div>
+    <!-- Aquí comienza la información en texto -->
+    <div class="content_persona_text">
+      <h4>Lejla Dzanko</h4>
+      <p>
+        ¡Hola! 👋🏻 Soy Lejla, tengo 30 años. Me dedico a dar clases y a la traducción. Los idiomas siempre han sido mi
+        pasión: empecé a aprender español viendo telenovelas con mi abuela y también estudié inglés en la universidad.
+        Me encanta viajar, cocinar y me chiflan los detalles, tanto darlos como recibirlos 💌. Soy fanática del flower
+        pattern 🌼 y me gusta luchar por tener un mundo más consciente y justo ♻️.
+      </p>
+      <!-- Aquí comienza la zona de iconos de social media -->
+      <ul class="socialshare_icon_list">
+        <li class="icono">
+          <a href="https://twitter.com/lejladzanko" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="icono">
+          <a href="https://www.linkedin.com/in/lejla-dzanko/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="icono">
+          <a href="https://github.com/lejladzanko" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+        <li class="icono">
+          <a href="mailto:lejladzanko@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </main>
+    <!-- AQUI COMIENZA EL FOOTER -->
+    <footer>
+  <div class="container">
+    <span class="footer_title">Pull&Cry &copy; 2024</span>
+    <ul class="footer_item_list">
+      <li><a class="footer_items_anchor" href="#equipo-id">EQUIPO</a></li>
+      <li><a class="footer_items_anchor" href="#quienes-somos-id">QUIÉNES SOMOS</a></li>
+      <li><a class="footer_items_anchor" href="contact.html">CONTACTO</a></li>
+    </ul>
+    <div class="footer_logo">
+      <img src="../images/logo-adalab.png" alt="adalab_logo" />
+    </div>
+  </div>
 </footer>
 
-    </div>
-    <script src="./js/main.js"></script>
   </body>
 </html>
