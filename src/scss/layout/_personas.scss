@@ -54,9 +54,24 @@
       margin-top: 15px;    
     }
     
-    & .icono::after {
+    & .icono:not(:last-child):after {
       content: "·";
       color: $tertiary-color;
+    }
+
+    & .icono {
+      & a:link {
+        color: #099d8d;
+      }
+      & a:visited {
+        color: #099d8d;
+      }
+      & a:hover {
+        color: hotpink;
+      }
+      & a:active {
+        color: $primary-color;
+      }          
     }
 }
 
