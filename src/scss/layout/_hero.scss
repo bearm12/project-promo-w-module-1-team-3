@@ -1,7 +1,7 @@
 .hero__image {
     height: 421px;
     background-image: url(../images/hero_img.jpg);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     @media (min-width: 1200px) {
@@ -27,7 +27,7 @@
     margin: 0 auto; 
         @media (min-width: 768px) {
             margin: 0 0 0 46px;
-            width: 441px;
+            width: 450px;
             padding: 15px 30px 15px 30px;
             top: 341px;
             text-align: left;
@@ -35,7 +35,7 @@
         }
         @media (min-width: 1200px) {
             margin: 0 0 0 138px;
-            width: 574px;
+            width: 580px;
             top: 460px;
             font-size: 24px;
             line-height: 30px;
